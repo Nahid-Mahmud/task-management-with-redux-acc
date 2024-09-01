@@ -10,7 +10,7 @@ const initialState = {
       deadline: "2024-09-17",
       assignTo: "Jane Doe",
       priority: "Medium",
-      status: "",
+      status: "pending",
     },
   ],
 };

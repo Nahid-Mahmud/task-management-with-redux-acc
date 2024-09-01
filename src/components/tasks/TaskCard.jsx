@@ -13,6 +13,15 @@ const TaskCard = ({ task }) => {
   //   priority: "Medium",
   // };
 
+  let currentStatus;
+  if (task?.status === "pending") {
+    currentStatus = "running";
+  } else if (task?.status === "running") {
+    currentStatus = "done";
+  } else {
+    currentStatus = "archieved";
+  }
+
   return (
     <div className="bg-secondary/10 rounded-md p-5">
       <h1
@@ -30,7 +39,7 @@ const TaskCard = ({ task }) => {
           <button title="Delete">
             <TrashIcon className="h-5 w-5 text-red-500" />
           </button>
-          <button onClick={() => dispatch(updateStatus({ id: task?.id, status: "running" }))} title="In progress">
+          <button onClick={() => dispatch(updateStatus({ id: task?.id, status: currentStatus }))} title="In progress">
             <ArrowRightIcon className="h-5 w-5 text-primary" />
           </button>
         </div>
