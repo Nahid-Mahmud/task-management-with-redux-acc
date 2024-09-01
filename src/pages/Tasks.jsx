@@ -1,7 +1,6 @@
 import { BellIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import MyTasks from "../components/tasks/MyTasks";
 import TaskCard from "../components/tasks/TaskCard";
-import Modal from "../components/ui/Modal";
 import { useState } from "react";
 import AddTaskModal from "../components/tasks/AddTaskModal";
 
