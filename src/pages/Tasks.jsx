@@ -45,9 +45,7 @@ const Tasks = () => {
               <p className="bg-primary text-white w-6 h-6 grid place-content-center rounded-md">0</p>
             </div>
             <div className="space-y-3">
-              {tasks.map((task) => (
-                <TaskCard task={task} key={task?.id} />
-              ))}
+              {tasks.map((task) => task?.status === "pending" && <TaskCard task={task} key={task?.id} />)}
             </div>
           </div>
           <div className="relative h-[800px] overflow-auto">
@@ -56,9 +54,7 @@ const Tasks = () => {
               <p className="bg-primary text-white w-6 h-6 grid place-content-center rounded-md">0</p>
             </div>
             <div className="space-y-3">
-              {tasks.map((task) => (
-                <TaskCard task={task} key={task?.id} />
-              ))}
+              {tasks.map((task) => task?.status === "running" && <TaskCard task={task} key={task?.id} />)}
             </div>
           </div>
           <div className="relative h-[800px] overflow-auto">
@@ -67,9 +63,7 @@ const Tasks = () => {
               <p className="bg-primary text-white w-6 h-6 grid place-content-center rounded-md">0</p>
             </div>
             <div className="space-y-3">
-              {tasks.map((task) => (
-                <TaskCard task={task} key={task?.id} />
-              ))}
+              {tasks.map((task) => task?.status === "done" && <TaskCard task={task} key={task?.id} />)}
             </div>
           </div>
         </div>
