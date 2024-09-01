@@ -7,7 +7,7 @@ import {
 
 import logo from "../../assets/image/logo.png";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 const Sidebar = () => {
   // get all tasks form redux store
