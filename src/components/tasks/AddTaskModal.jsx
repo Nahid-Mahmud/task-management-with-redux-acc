@@ -75,10 +75,11 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
           <select
             id="assignTo"
             {...register("assignTo", { required: "Please select an assignee" })}
+            defaultValue={"nahid"}
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
           >
             <option value="">Select Assignee</option>
-            <option value="John">John</option>
+            <option value="nahid">Nahid</option>
             <option value="Jane">Jane</option>
             <option value="Doe">Doe</option>
           </select>
