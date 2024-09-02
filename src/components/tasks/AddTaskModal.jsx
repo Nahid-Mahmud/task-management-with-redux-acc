@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { addTask } from "../../redux/features/tasks/tasksSlice";
 
 const AddTaskModal = ({ isOpen, setIsOpen }) => {
+  // console.log("Hello");
   const dispatch = useDispatch();
 
   const {

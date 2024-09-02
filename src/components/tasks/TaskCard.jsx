@@ -4,6 +4,8 @@ import { removeTask, updateStatus } from "../../redux/features/tasks/tasksSlice"
 
 const TaskCard = ({ task }) => {
   const dispatch = useDispatch();
+
+
   // const task = {
   //   id: 1,
   //   title: "Hello",
